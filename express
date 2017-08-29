@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run \
+  --interactive \
+  --tty \
+  --rm \
+  --volume "${PWD}:/home/express" \
+  --workdir /home/express \
+  eightycolumns/express:4.15.4 "$@"
