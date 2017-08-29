@@ -1,0 +1,31 @@
+DOCKERIZED EXPRESS
+
+  A dockerized Express application generator.
+
+BUILD IMAGE
+
+  make
+
+  or
+
+  make build
+
+INSTALL EXECUTABLE
+
+  make install
+
+USAGE
+
+  First, add these lines to your .bashrc to ensure ~/bin is in your PATH:
+
+    if ! echo "${PATH}" | grep -Eq "(^|:)${HOME}/bin(:|$)"; then
+      export PATH=${HOME}/bin:${PATH}
+    fi
+
+  Then...
+
+    express app_name
+
+UNINSTALL EXECUTABLE
+
+  make uninstall
